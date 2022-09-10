@@ -1,0 +1,24 @@
+#main_menu{
+    background: rgba(26, 63, 97, 0.75);
+    .menu_part{
+        ul{
+            width: 100%;
+            justify-content: center;
+            li{
+                a{
+                    line-height: 40px;
+                    padding: 0 10px;
+                    @include text(16px,400,#fff);
+                    text-transform: uppercase;
+                    @include transition();
+                    &:hover{
+                        background: $hover;
+                    }
+                    &.active{
+                        background: $hover;
+                    }
+                }
+            }
+        }
+    }
+}

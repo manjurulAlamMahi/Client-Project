@@ -1,0 +1,46 @@
+@import '../mixins/mixins';
+/* ==================  Footer Part Start  ================== */
+#footer{
+    .common_head{
+        h2{
+            color: #fff;
+        }
+        p{
+            @include text(16px,400,#fff);
+            padding: 10px 0;
+        }
+    }
+    form{
+        label{
+            @include text(16px,500,#fff);
+            padding: 15px 0;
+        }
+        input{
+            padding: 10px;
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+            padding: 10px;
+            resize: none;
+        }
+        button{
+            border: none;
+            background: $hover;
+            @include text(15px,600,#fff);
+            padding: 7px 12px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+    .copy_right{
+        text-align: center;
+        padding-top: 10px;
+        p{
+            @include text(15px,600,#fff);
+        }
+    }
+}
+/* ==================  Footer Part End  ================== */

@@ -1,0 +1,56 @@
+@import '../mixins/mixins';
+/* ======================== Heading css Start =============================== */
+#heading_part{
+    .heading_left{
+        display: flex;
+        flex-wrap: wrap;
+        .heading_title{
+            padding: 0 0 0 15px;
+            align-self: center;
+            h1{
+                @include text(22px,600,#333);
+            }
+        }
+    }
+    .heading_lang{
+        ul{
+            li{
+                position: relative;
+                a{
+                    img{
+                        margin-right: 5px
+                    }
+                    @include text(16px,600,#333);
+                    @include transition();
+                    i{
+                        font-size: 14px;
+                        padding: 5px;
+                    }
+                }
+                ul{
+                    position: absolute;
+                    top: 100%;
+                    left: -10px;
+                    display: none;
+                    width: 200px;
+                    padding: 20px 10px;
+                    background: #fff;
+                    z-index: 9;
+                    li{
+                        margin: 10px 0;
+                    }
+                }
+                &:hover{
+                    >a{
+                        color: $hover;
+                        text-decoration: underline;
+                    }
+                    ul{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ======================== Heading css End =============================== */
